@@ -24,7 +24,6 @@ header button:hover {
 }
 
 header {
-    border-bottom: 10px;
     border-bottom: 1px solid;
     height: 89px;
     display: flex;
@@ -35,12 +34,14 @@ header {
 
 header .links {
     display: flex;
-    justify-content: space-around;
-    gap: 230px;
+    justify-content: center;
+    width: 100%;
+
+    gap: .5rem;
 }
 
 p {
-    margin-bottom: 0px !important;
+    margin-bottom: 0 !important;
 }
 
 a {
@@ -59,21 +60,25 @@ a {
     align-items: center;
     padding: 0 50px 0 50px;
     max-width: 1600px;
+    width: 100%;
 }
 
 body {
-    display: flex !important;
-    align-items: center !important;
-    flex-direction: column !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
     flex-wrap: wrap;
     gap: 50px;
 }
 
 main {
-    display: flex !important;
-    justify-content: center !important;
-    flex-direction: column !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     max-width: 1600px;
+    width: 100%;
     gap: 70px;
 }
 
@@ -192,9 +197,12 @@ main {
 }
 
 .tariffs {
-    display: flex;
+    /*TODO В адаптиве изменять количеств колонок. Пример уже есть, он ниже*/
+    --tariffs-cols: 4;
+    display: grid;
+    grid-template-columns: repeat(var(--tariffs-cols), 1fr);
+
     gap: 40px;
-    padding-top: 35px;
 }
 
 .tariffs .cards {
@@ -292,8 +300,12 @@ main {
 
 .marusia .right-side img {
     border-radius: 15px;
-    width: 590px;
-    height: 386px;
+    max-width: 590px;
+    max-height: 386px;
+
+    width: 100%;
+    aspect-ratio: 16/9;
+
     object-fit: cover;
 }
 
@@ -373,14 +385,17 @@ input {
 }
 
 .container-oplata {
+    /*TODO Сделать flex wrap */
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
 }
 
 .container-oplata img {
-    width: 700px;
+    max-width: 700px;
     object-fit: cover;
+    aspect-ratio: 16/9;
+    width: 100%;
 }
 
 footer {
@@ -442,6 +457,10 @@ footer .last p {
 }
 
 @media(max-width:1600px) {
+    .tariffs {
+        /*Пример изменения количества колонок*/
+        --tariffs-cols: 3;
+    }
     .cards {
         flex-wrap: wrap;
     }
