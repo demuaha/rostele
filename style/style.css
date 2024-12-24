@@ -74,7 +74,6 @@ main {
     justify-content: center !important;
     flex-direction: column !important;
     max-width: 1600px;
-    flex-wrap: wrap;
     gap: 70px;
 }
 
@@ -447,5 +446,7 @@ footer .last p {
         flex-wrap: wrap;
     }
 
-    .cards .popular-services
+    .cards .popular-services{
+        width: 360px;
+    }
 }
