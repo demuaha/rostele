@@ -37,7 +37,7 @@ header .links {
     justify-content: center;
     width: 100%;
 
-    gap: .5rem;
+    gap: 35px;
 }
 
 p {
@@ -50,7 +50,9 @@ a {
 
 .right {
     display: flex;
-    gap: 15px;
+    width: 60%;
+    justify-content: end;
+    gap: 20px;
     align-items: center;
 }
 
@@ -197,7 +199,6 @@ main {
 }
 
 .tariffs {
-    /*TODO В адаптиве изменять количеств колонок. Пример уже есть, он ниже*/
     --tariffs-cols: 4;
     display: grid;
     grid-template-columns: repeat(var(--tariffs-cols), 1fr);
@@ -452,20 +453,235 @@ footer .last p {
 }
 
 .best-tariffs h2 {
-    font-size: 32px;
     font-weight: bold;
 }
 
 @media(max-width:1600px) {
-    .tariffs {
-        /*Пример изменения количества колонок*/
-        --tariffs-cols: 3;
-    }
-    .cards {
-        flex-wrap: wrap;
+    main {
+        width: 95%;
     }
 
-    .cards .popular-services{
+    .tariffs {
+        --tariffs-cols: 3;
+        justify-items: center;
+    }
+
+    .right {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards .popular-services {
         width: 360px;
+    }
+}
+
+@media (max-width: 1400px) {
+    footer .info {
+        gap: 50px;
+    }
+
+    footer .last {
+        gap: 50px;
+    }
+
+    .container-oplata img {
+        width: 550px;
+    }
+
+    .marusia {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .right {
+        width: 60%;
+    }
+
+    .tariffs {
+        --tariffs-cols: 2;
+    }
+
+    .container-oplata img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-oplata img {
+        width: 0px;
+    }
+
+    .container-input {
+        gap: 50px;
+    }
+
+    .marusia .button {
+        padding-top: 20px;
+    }
+
+    .navigate {
+        flex-direction: column;
+    }
+
+    header {
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .right {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .carousel-caption p {
+        padding-top: 5px !important;
+        padding-bottom: 90px !important;
+    }
+
+    .carousel-caption button {
+        width: 120px;
+        height: 35px;
+    }
+
+    .carousel-control-prev-icon {
+        opacity: 0;
+    }
+
+    .carousel-dark .carousel-control-next-icon {
+        opacity: 0;
+    }
+
+    footer .info {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    footer .last {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .marusia {
+        background-image: url(../img/kolonka_mini-banner_3_2340x904_1224_0__proj.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .marusia .right-side img {
+        width: 0px;
+    }
+
+    .carousel-caption h5 {
+        padding-top: 30px !important;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .carousel-caption p {
+        padding-top: 30px !important;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    header .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .info {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    footer .last {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    footer .last p {
+        text-align: center;
+    }
+
+    .popular h1 {
+        font-size: 24px;
+    }
+
+    .tariffs {
+        --tariffs-cols: 1;
+    }
+
+    .carousel-caption p {
+        padding-top: 5px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .carousel img {
+        width: 200px;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .carousel-caption p {
+        padding-top: 5px !important;
+        padding-bottom: 25px !important;
+    }
+
+    .carousel img {
+        width: 200px;
+    }
+
+    .carousel h5 {
+        padding-top: 10px !important;
+    }
+
+    .carousel button {
+        width: 100px;
+        height: 30px;
+    }
+
+    .carousel-caption {
+        padding-top: 0px !important;
+    }
+
+    .marusia {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .popular img {
+        width: 100%;
+    }
+
+    .container-input {
+        padding-right: 0px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 14px;
+    }
+
+    .carousel-caption p {
+        padding-top: 0px !important;
+        padding-bottom: 5px !important;
     }
 }
