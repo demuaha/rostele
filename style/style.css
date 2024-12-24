@@ -1,0 +1,451 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    font-family: "Rostelocom Basis", sans-serif;
+}
+
+header button {
+    border-radius: 12px !important;
+    width: 120px;
+    height: 36px;
+    border: none;
+    background-color: #669BBC;
+    color: white;
+    font-size: 14px;
+}
+
+header button:hover {
+    color: white;
+    background-color: #C11720;
+    transition: .3s;
+}
+
+header {
+    border-bottom: 10px;
+    border-bottom: 1px solid;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header .links {
+    display: flex;
+    justify-content: space-around;
+    gap: 230px;
+}
+
+p {
+    margin-bottom: 0px !important;
+}
+
+a {
+    color: black !important;
+}
+
+.right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navigate {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    max-width: 1600px;
+}
+
+body {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+main {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    max-width: 1600px;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.slider {
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    width: 1300px;
+    /* padding-top: 50px; */
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.carousel img {
+    border-radius: 10px;
+
+}
+
+.carousel h5 {
+    color: white;
+    font-size: 32px;
+}
+
+.carousel p {
+    color: white;
+}
+
+.carousel-caption {
+    left: 5% !important;
+    text-align: start !important;
+    top: 8% !important;
+
+}
+
+.carousel-caption h5 {
+    padding-top: 70px !important;
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    padding-top: 5px !important;
+    padding-bottom: 350px !important;
+}
+
+.carousel-caption button {
+    border-radius: 12px !important;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #669BBC;
+    color: white;
+    font-size: 16px;
+    z-index: 2 !important;
+    position: absolute !important;
+}
+
+.carousel-caption button:hover {
+    color: white;
+    background-color: #C11720;
+    transition: .3s;
+}
+
+.carousel-caption h1 {
+    font-size: 14px;
+    color: #10182880;
+}
+
+.popular-services {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popular .cards {
+    display: flex;
+    gap: 50px;
+}
+
+.popular .photo {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid !important;
+    border-radius: 10px;
+}
+
+.popular img {
+    width: 360px;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.popular img:hover {
+    transform: scale(1.25);
+}
+
+
+.popular .cards h1 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.popular h1 {
+    padding-bottom: 15px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.popular p {
+    font-size: 14px;
+}
+
+.tariffs {
+    display: flex;
+    gap: 40px;
+    padding-top: 35px;
+}
+
+.tariffs .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 370px;
+
+    border: #524697 solid 1px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.tariffs img {
+    width: 30px;
+    height: 30px;
+}
+
+.tariffs .option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tariffs .mobile {
+    padding-bottom: 30px;
+}
+
+.tariffs .option p {
+    margin-bottom: 0px !important;
+}
+
+.tariffs .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    border-bottom: #524697 solid 1px;
+}
+
+.tariffs .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 50px;
+}
+
+
+.tariffs .price {
+    display: flex;
+    align-items: baseline;
+}
+
+.tariffs .price p {
+    margin-bottom: 0px !important;
+}
+
+.tariffs .price h2 {
+    margin-bottom: 0px !important;
+}
+
+.tariffs button {
+    border-radius: 7px !important;
+    width: 120px;
+    height: 36px;
+    border: none;
+    background-color: #669BBC;
+    color: white;
+    font-size: 14px;
+}
+
+.tariffs .center {
+    display: flex;
+    justify-content: center;
+}
+
+.tariffs .center a {
+    color: #C11720 !important;
+    text-decoration: underline !important;
+}
+
+.tariffs button:hover {
+    color: white;
+    background-color: #C11720;
+    transition: .3s;
+}
+
+.marusia {
+    background-color: #669BBC;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.marusia .right-side img {
+    border-radius: 15px;
+    width: 590px;
+    height: 386px;
+    object-fit: cover;
+}
+
+.marusia .left-side .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    padding-top: 50px;
+}
+
+.marusia .button {
+    padding-top: 180px;
+}
+
+.marusia button {
+    border-radius: 7px !important;
+    width: 120px;
+    height: 36px;
+    border: none;
+    background-color: #C11720;
+    color: white;
+    font-size: 14px;
+}
+
+.marusia button:hover {
+    color: white;
+    background-color: #524697;
+    transition: .3s;
+}
+
+.payment {
+    background-color: #F8F8F8;
+    padding: 50px;
+}
+
+.payment h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    background-color: white;
+    padding: 50px;
+    gap: 170px;
+}
+
+.payment button {
+    border-radius: 7px !important;
+    width: 120px;
+    height: 36px;
+    border: none;
+    background-color: #669BBC;
+    color: white;
+    font-size: 14px;
+}
+
+.payment button:hover {
+    color: white;
+    background-color: #C11720;
+    transition: .3s;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #898989;
+}
+
+.container-input .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.container-oplata {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.container-oplata img {
+    width: 700px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #F8F8F8;
+    width: 100%;
+}
+
+footer .numbers {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    height: 167px;
+    border-top: #898989 1px solid;
+    border-bottom: #898989 1px solid;
+}
+
+footer .info {
+    display: flex;
+    justify-content: center;
+    height: 137px;
+    align-items: center;
+    gap: 144px;
+    border-bottom: #898989 1px solid;
+}
+
+footer .info img {
+    height: 59px;
+}
+
+footer .last {
+    display: flex;
+    justify-content: center;
+    gap: 215px;
+    height: 109px;
+    align-items: center;
+}
+
+footer p {
+    color: #898989;
+}
+
+footer h2 {
+    color: #6D727C;
+}
+
+footer a {
+    color: #898989 !important;
+    text-decoration: underline !important;
+}
+
+footer .last p {
+    max-width: 800px;
+}
+
+.best-tariffs h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@media(max-width:1600px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .cards .popular-services
+}
